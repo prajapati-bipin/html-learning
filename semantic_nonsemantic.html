@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic vs Non-Semantic Tags</title>
+</head>
+<body>
+    <h1>Semantic vs Non-Semantic HTML Elements</h1>
+
+    <!-- ================= Semantic Elements ================= -->
+     
+    <section>
+        <h2>Semantic Elements</h2>
+
+    <!-- 1. Document structure -->
+    <header>
+        <h3>&lt;header&gt;</h3>
+        <p>Contains introductory content or navigation links.</p>
+    </header>
+
+    <nav>
+        <h3>&lt;nav&gt;</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>&lt;main&gt;</h3>
+        <p>The main content of the document.</p>
+
+        <article>
+            <h4>&lt;article&gt;</h4>
+            <p>Self-contained composition in a document, e.g. a blog post.</p>
+        </article>
+
+        <section>
+            <h4>&lt;section&gt;</h4>
+            <p>A thematic grouping of content, with its own heading.</p>
+        </section>
+
+        <aside>
+            <h4>&lt;aside&gt;</h4>
+            <p>Sidebar content, often tangentially related.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <h3>&lt;footer&gt;</h3>
+        <p>Footer for author info, links, copyright, etc.</p>
+    </footer>
+
+    <!-- 2. Content-level semantics -->
+     
+    <address>
+        <h4>&lt;address&gt;</h4>
+        <p>Contact information for author/owner.</p>
+    </address>
+
+    <time datetime="2025-05-02">
+        <h4>&lt;time&gt;</h4>
+        May 2, 2025
+    </time>
+
+    <mark>
+        <h4>&lt;mark&gt;</h4>
+        Highlighted text
+    </mark>
+
+    <details>
+      <summary>&lt;details&gt; + &lt;summary&gt;</summary>
+      <p>Hidden content revealed on click.</p>
+    </details>
+  </section>
+
+  <!-- ============== Non-Semantic Elements ============== -->
+  <section>
+    <h2>Non-Semantic Elements</h2>
+
+    <!-- Generic containers with no inherent meaning -->
+    <div>
+      <h3>&lt;div&gt;</h3>
+      <p>Used purely for grouping and styling.</p>
+    </div>
+
+    <div>
+      <h3>&lt;span&gt;</h3>
+      <p>Inline container with no meaning.</p>
+    </div>
+
+    <!-- Presentational tags (deprecated or purely visual) -->
+    <div>
+      <h3>Presentational Tags</h3>
+      <p><b>&lt;b&gt;</b> — bold text (no added importance)</p>
+      <p><i>&lt;i&gt;</i> — italic text (no added emphasis)</p>
+      <p><u>&lt;u&gt;</u> — underlined text</p>
+      <p><s>&lt;s&gt;</s> — strikethrough text</p>
+      <p><font size="4" color="red">&lt;font&gt;</font> — deprecated font styling</p>
+      <p><center>&lt;center&gt;Centered content (deprecated)</center></p>
+    </div>
+  </section>
+</body>
+</html>

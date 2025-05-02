@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All Form Tags Example</title>
+</head>
+<body>
+  <h1>HTML Form Elements Showcase</h1>
+  <form action="/submit" method="post">
+
+    <!-- 1. Fieldset & Legend -->
+    <fieldset>
+      <legend>Personal Info</legend>
+
+      <!-- 2. Text inputs -->
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+      <br>
+
+      <label for="nickname">Nickname:</label>
+      <input type="search" id="nickname" name="nickname" placeholder="Searchable text">
+      <br>
+
+      <!-- 3. Password -->
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" name="password">
+      <br>
+
+      <!-- 4. Email, Tel, URL -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+      <br>
+
+      <label for="website">Website:</label>
+      <input type="url" id="website" name="website">
+      <br>
+
+      <!-- 5. Number, Range -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="0" max="120">
+      <br>
+
+      <label for="satisfaction">Satisfaction (0–10):</label>
+      <input type="range" id="satisfaction" name="satisfaction" min="0" max="10">
+      <br>
+
+      <!-- 6. Date, Color -->
+      <label for="birthday">Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+      <br>
+
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+      <br>
+
+    </fieldset>
+
+    <!-- 7. Textarea -->
+    <fieldset>
+      <legend>Message</legend>
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" rows="4" cols="40" placeholder="Type here..."></textarea>
+    </fieldset>
+
+    <!-- 8. Select, Optgroup, Datalist -->
+    <fieldset>
+      <legend>Preferences</legend>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <optgroup label="Europe">
+          <option value="de">Germany</option>
+          <option value="fr">France</option>
+        </optgroup>
+        <optgroup label="Asia">
+          <option value="jp">Japan</option>
+          <option value="in">India</option>
+        </optgroup>
+      </select>
+      <br>
+
+      <label for="browser">Favorite Browser:</label>
+      <input list="browsers" id="browser" name="browser">
+      <datalist id="browsers">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Safari">
+        <option value="Edge">
+        <option value="Opera">
+      </datalist>
+    </fieldset>
+
+    <!-- 9. Checkboxes & Radios -->
+    <fieldset>
+      <legend>Subscriptions & Gender</legend>
+
+      <label>
+        <input type="checkbox" name="subscribe" value="newsletter">
+        Subscribe to newsletter
+      </label>
+      <br>
+
+      <label>
+        <input type="radio" name="gender" value="male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">
+        Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="other">
+        Other
+      </label>
+    </fieldset>
+
+    <!-- 10. File upload & Hidden -->
+    <fieldset>
+      <legend>Extras</legend>
+
+      <label for="avatar">Upload Avatar:</label>
+      <input type="file" id="avatar" name="avatar" accept="image/*">
+      <br>
+
+      <input type="hidden" name="form_id" value="forms_example_01">
+    </fieldset>
+
+    <!-- 11. Output, Progress, Meter -->
+    <fieldset>
+      <legend>Live Feedback</legend>
+
+      <label for="slider">Adjust Slider:</label>
+      <input type="range" id="slider" name="slider" min="0" max="100" oninput="output.value = slider.value">
+      <output id="output" name="output">50</output>
+      <br>
+
+      <label>Progress:</label>
+      <progress value="70" max="100">70%</progress>
+      <br>
+
+      <label>Battery Level:</label>
+      <meter value="0.6">60%</meter>
+    </fieldset>
+
+    <!-- 12. Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('Hello!')">Click Me</button>
+
+  </form>
+  
+  <!-- Simple script for output update -->
+  <script>
+    const slider = document.getElementById('slider');
+    const output = document.getElementById('output');
+    slider.value = 50;
+    output.value = slider.value;
+  </script>
+</body>
+</html>
