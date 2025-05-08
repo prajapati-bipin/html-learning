@@ -25,7 +25,7 @@ The repository contains the following folders and files:
 - **fieldset-legend.html**: Example of grouping form fields using `<fieldset>` and `<legend>`.
 - **input-attributes.html**: Demonstrates useful input attributes like `placeholder`, `required`, `readonly`, `min`, `max`.
 
-### /exercise
+### /Exercise
 
 This folder includes hands-on practice tasks based on HTML concepts you've learned. Each file is a small assignment to help you reinforce your skills.
 
